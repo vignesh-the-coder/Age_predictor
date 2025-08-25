@@ -19,9 +19,9 @@ const featuresCategories: FeatureCategory[] = [
     title: "Examples",
     icon: <Icon icon="solar:mask-happly-linear" width={40} />,
     descriptions: [
-      "Explain quantum computing in simple terms",
-      "Got any creative ideas for a 10 year old's birthday?",
-      "How do I make an HTTP request in Javascript?",
+        "Upload a selfie to get an instant age prediction",
+      "Try different photos to see how age estimation changes",
+      "Fun and interactive demo of AI in action",
     ],
     bgColor: "bg-sky-100",
   },
@@ -30,9 +30,10 @@ const featuresCategories: FeatureCategory[] = [
     title: "Capabilities",
     icon: <Icon icon="solar:magic-stick-3-linear" width={40} />,
     descriptions: [
-      "Remembers what user said earlier in the conversation",
-      "Allows user to provide follow-up corrections",
-      "Trained to decline inappropriate requests",
+          "Provides instant age estimation from images",
+      "Works on desktop, tablet, and mobile devices",
+      "No images are stored — your privacy is safe",
+
     ],
     bgColor: "bg-purple-100",
   },
@@ -41,9 +42,10 @@ const featuresCategories: FeatureCategory[] = [
     title: "Limitations",
     icon: <Icon icon="solar:shield-warning-outline" width={40} />,
     descriptions: [
-      "May occasionally generate incorrect information",
-      "May occasionally produce harmful instructions or biased information.",
-      "Limited knowledge of world and events after April 2023",
+       "Predictions are approximate and may not always be accurate",
+      "Image quality, lighting, and expressions affect results",
+      "Built for fun and learning, not as a professional tool",
+
     ],
     // Tailwind doesn’t include beige, so use inline style
     bgColor: "bg-[beige]",
@@ -63,6 +65,7 @@ function FeatureCard({
 }) {
   return (
     <div className={`p-6 rounded-2xl shadow-md ${bgColor}`}>
+     
       <div className="flex items-center gap-3 mb-4">
         {icon}
         <h3 className="text-xl font-semibold">{title}</h3>
@@ -80,6 +83,10 @@ function FeatureCard({
 
 export default function FeatureSection() {
   return (
+     <section
+      id="about"   // 👈 add this
+      className="py-16 px-6"
+    >
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
       {featuresCategories.map((category) => (
         <FeatureCard
@@ -91,5 +98,6 @@ export default function FeatureSection() {
         />
       ))}
     </div>
+    </section>
   );
 }

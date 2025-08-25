@@ -5,7 +5,7 @@ import faqs from "./faqs"; // <-- array of FAQs
 
 export default function Faq() {
   return (
-    <section className="w-full  bg-gradient-to-b from-[#F4F4F5] via-white to-[#F5A524]/10 py-20 mt-7 rounded-md  sm:py-32 lg:py-40">
+    <section className="w-full  bg-gradient-to-b from-[#f4edfc] via-[#f4edfc] via-50% to-transparent py-20 mt-7 rounded-md  sm:py-32 lg:py-40">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Centered Heading */}
         <h2 className="text-3xl font-semibold text-center mb-8">     

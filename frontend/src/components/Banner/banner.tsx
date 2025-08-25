@@ -3,7 +3,7 @@ import { Button } from "@heroui/react";
 export default function Banner() {
   return (
     <section className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl shadow-lg overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:gap-12">
+      <div className="mx-auto max-w-7xl px-6 py-6 lg:flex lg:items-center lg:justify-between lg:gap-12">
         
         {/* Left Content */}
         <div className="flex-1">

@@ -7,7 +7,7 @@ export interface FAQ {
 
 const faqs: FAQ[] = [
   {
-    title: "What is this platform about?",
+    title: "Examples",
     content:
       "This platform uses AI to analyze images and predict attributes such as age. It’s designed to be simple, interactive, and user-friendly.",
   },

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-[70vh] flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-[#F4F4F5] via-white to-[#F5A524]/10">
+    <section    id="home" className="w-full min-h-[70vh] flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-[#F4F4F5] via-white to-[#F5A524]/10">
       {/* Title */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
@@ -12,7 +12,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="text-4xl md:text-6xl font-extrabold leading-tight"
       >
-        Predict Age with <span className="text-[#F31260]">AI</span>
+        Predict Your Age with <span className="text-[#F31260]">AI</span>
       </motion.h1>
 
       {/* Subtitle */}
@@ -28,13 +28,15 @@ export default function Hero() {
 
       {/* CTA Buttons */}
       <div className="mt-6 flex gap-4 flex-wrap justify-center">
+        
         <Button
+        href="#services"
           style={{ backgroundColor: "#F31260", color: "white" }}
           size="lg"
           radius="full"
           className="text-lg px-8 py-4 rounded-full"
         >
-          Get Started
+          Using Face
         </Button>
         <Button
           style={{ borderColor: "#17C964", color: "#17C964" }}

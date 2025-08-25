@@ -201,7 +201,7 @@ export default function AgePredictionApp() {
 
   /* -------- UI -------- */
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-blue-100 flex flex-col items-center p-6">
+    <div   id="services" className="min-h-screen bg-[#d5effd] flex flex-col items-center p-6">
       <h1 className="text-3xl font-bold mb-6 text-indigo-700">Age Prediction AI</h1>
 
       {/* Upload Section */}

@@ -1,37 +1,4 @@
 
-// import Navbar from "./components/Navbar/Navbar";
-// import Banner from "./components/Banner/banner";
-// import Hero from "./components/Hero/hero";
-// import FeatureSection from "./components/featureCard/FeatureSection";
-//  // renamed Component → FeatureSection
-
-// export default function App() {
-//   return (
-//     <div className="flex flex-col w-full">
-//       {/* Navbar */}
-//       <Navbar />
-
-//       {/* Banner */}
-//       <Banner />
-
-//       {/* Hero Section */}
-//       <Hero />
-
-//       {/* Feature Cards Section */}
-//       <section className="w-full px-6 py-12 bg-white">
-//         <FeatureSection />
-//       </section>
-
-//     </div>
-//   );
-// }
-
-
-
-
-
-
-
 "use client";
 
 
@@ -45,6 +12,7 @@ import Faq from "./components/Faq/Faq";
 
 
 import ImagePredict from "./components/image-predict/AgePredict";
+import VoicePredict from "./components/voice-predict/voicePredict";
 
 
 export default function App() {
@@ -54,23 +22,23 @@ export default function App() {
     <div className="flex flex-col w-full">
       {/* Navbar */}
       <Navbar />
-
-      {/* Banner */}
       <Banner />
+      <main className="pt-7">
+          <Hero />
+      <section className="w-full px-6 py-3 pt-2 mt-3 bg-white">
+        <h2 className="text-3xl font-bold text-center mt-3 mb-1 text-[#39387d]">
+          How It Works
+        </h2>
 
-      {/* Hero Section */}
-      <Hero />
-
-      {/* Feature Cards Section */}
-      <section className="w-full px-6 py-12 bg-white">
         <FeatureSection />
       </section>
-
-      {/* Prediction + Feedback Section */}
-
-           <ImagePredict />
-           
-            <Faq />
+        <ImagePredict />
+        <section className="w-full bg-[#f7437a] mt-5">
+        <VoicePredict />
+      </section>
+        <Faq />
+      </main>
+   
 
     </div>
   );
